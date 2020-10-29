@@ -22,6 +22,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 // core components
 import Admin from "layouts/Admin.js";
+import Juego from "layouts/Juego.js";
 import RTL from "layouts/RTL.js";
 import Components from "views/Components/Components.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
@@ -35,6 +36,7 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
+      <Route path="/juego" component={Juego} />
       <Route path="/admin" component={Admin} />
       <Route path="/rtl" component={RTL} />
       <Route path="/landing-page" component={LandingPage} />
